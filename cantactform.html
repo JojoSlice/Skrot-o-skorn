@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="widht=device-width, initial-scale=1.0">
+	<title>Skrot och Korn AB</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="top">
+		<img class="logo" src="images/SkrotoKorn.png">
+	</div>
+	<header>
+		<nav class="menu">
+			<div>
+				<img onclick="onToggleMenu(this)" id="menubutton" src="images/menu.svg">
+			</div>
+			<ul class="menulist">
+				<li>
+					<a href="index.html">Hem</a>
+				</li>
+				<li>
+					<a href="price.html">Priser</a>
+				</li>
+				<li>
+					<a href="contact.html">Våran personal</a>
+				</li>
+				<li>
+					<a href="media.html">Vår media</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+
+		<div class="contactform">
+			<form action="http://primat.se/services/sendform.aspx?xid=register&xmail=Jojo@skolan.se"
+				method="post">
+
+				<div class="flexrows">
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder">
+						<label for="name">Ditt namn</label>
+					</div>
+					<div class="flex1noborder">
+						<input type="text" id="name" name="name"><br>
+					</div>
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder space"></div>
+				</div>
+
+				<div class="flexrows">
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder">
+						<label for="adress">Din adress</label>
+					</div>
+					<div class="flex1noborder">
+						<input type="text" id="adress" name="adress"><br>
+					</div>
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder space"></div>
+				</div>
+
+				<div class="flexrows">
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder">
+						<label for="email">Din email</label>
+					</div>
+					<div class="flex1noborder">
+						<input type="email" id="email" name="email"><br>
+					</div>
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder space"></div>
+				</div>
+
+				<div class="flexrows">
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder">
+						<label for="phone">Ditt telefonnummer</label>
+					</div>
+					<div class="flex1noborder">
+						<input type="number" id="phone" name="phone"><br>
+					</div>
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder space"></div>
+				</div>
+
+				<div class="flexrows">
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder">
+						<p>Typ av kund:</p>
+					</div>
+					<div class="flex1noborder">
+						<div class="flexcolums">
+							<div class="flex1noborder">
+								<input type="radio" name="customertype" id="private"
+									value="private">
+								<label for="private">Privat</label>
+							</div>
+							<div class="flex1noborder">
+								<input type="radio" name="customertype" id="enterprise"
+									value="enterprise">
+								<label for="enterprise">Enterprise</label>
+							</div>
+						</div>
+					</div>
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder space"></div>
+				</div>
+
+
+				<div class="flexrows">
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder space">
+						<p>Antal anställda:</p><br>
+					</div>
+					<div class="flex1noborder">
+						<div class="flexcolums">
+							<div class="flex1noborder">
+								<input type="radio" name="enterprisesize" id="1-100"
+									value="1-100">
+								<label for="1-100">1-100</label>
+							</div>
+
+							<div class="flex1noborder">
+								<input type="radio" name="enterprisesize" id="101-1000"
+									value="101-1000">
+								<label for="101-1000">101-1000</label>
+							</div>
+
+							<div class="flex1noborder">
+								<input type="radio" name="enterprisesize" id="over-1000"
+									value="over-1000">
+								<label for="over-1000">Mer än 1000</label>
+							</div>
+						</div>
+					</div>
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder space"></div>
+				</div>
+
+				<div class="flexrows">
+					<div class="flex1noborder space"></div>
+					<div class="flex1noborder">
+						<div class="flexcolums">
+							<div class="flex1noborder">
+								<label for="questions">Har du några frågor?</label>
+							</div>
+
+							<div class="flex1noborder">
+								<input type="checkbox" name="newsletter" id="newsletter"
+									value="true">
+								<input type="hidden" name="newsletter" value="false">
+								<label for="newsletter">Vill ha nyhetsbrev!</label>
+							</div>
+
+							<div class="flex1noborder">
+								<input type="checkbox" name="phonecontact"
+									id="phonecontact" value="true">
+								<input type="hidden" name="phonecontact" value="false">
+								<label for="newsletter">Vill bli kontaktad via
+									telefon.</label>
+							</div>
+						</div>
+					</div>
+					<div class="flex1noborder">
+						<textarea class="tarea" id="questions" name="questions"></textarea>
+
+					</div>
+					<div class="flex1noborder space"></div>
+				</div>
+
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div class="box2">
+			<iframe src="contactinfo.html"></iframe>
+		</div>
+	</footer>
+</body>
+<script src="script.js"></script>
+
+</html>

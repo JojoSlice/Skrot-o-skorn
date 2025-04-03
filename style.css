@@ -1,0 +1,265 @@
+.logo {
+	width: auto;
+	height: 30vh;
+}
+
+.top {
+	background-color: gray;
+	opacity: 70%;
+}
+
+@media (min-width: 601px) {
+	header {
+		position: sticky;
+		top: 0px;
+		left: 1em;
+		flex-direction: row;
+	}
+
+	#menubutton {
+		width: 40px;
+		visibility: hidden;
+	}
+
+	.menu {
+		display: inline;
+		align-content: center;
+	}
+
+	.menu li {
+		display: inline;
+		justify-items: center;
+	}
+
+	.menu ul {
+		background-color: gray;
+		padding: 1.3em;
+	}
+
+	.flexbox {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.spacy {
+		display: block;
+	}
+
+	.search {
+		margin-left: 40vw;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		border: solid;
+		border-color: dimgray;
+		position: sticky;
+		top: 1em;
+		left: 1em;
+		flex-direction: column;
+		width: 140px;
+		background-color: gray;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		padding-top: 1px;
+	}
+
+	.menu {
+		text-align: left;
+	}
+
+	.menulist {
+		display: none;
+	}
+
+	.menulist.open {
+		display: block;
+	}
+
+	.menu li {
+		width: 150px;
+		margin-top: 3em;
+		list-style: none;
+		position: relative;
+		right: 40px;
+		bottom: 20px;
+	}
+
+	#menubutton {
+		width: 40px;
+	}
+
+	.menu ul {
+		background-color: gray;
+	}
+
+	.flexbox {
+		display: flex;
+		flex-direction: column;
+		margin-top: 2em;
+	}
+
+	.tableinfo {
+		display: none;
+	}
+
+	.space {
+		display: none;
+	}
+
+	.searchbox {
+		width: 130px;
+	}
+
+}
+
+.contactform {
+	background-color: gray;
+	border: solid;
+	border-color: dimgray;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
+.tarea {
+	width: 40vw;
+	height: 10vh;
+}
+
+.flexrows {
+	display: flex;
+	flex-direction: row;
+	border: none;
+}
+
+.flexcolums {
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+.menu a {
+	background-color: white;
+	color: gray;
+	padding: 1em;
+	text-decoration: none;
+	border: solid;
+	margin-right: 1em;
+}
+
+
+.searchbox {
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.menu a:hover {
+	background-color: antiquewhite;
+}
+
+
+body {
+	background-image: url(images/kontor.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.box {
+	border: none;
+	background-color: gray;
+	color: black;
+	align-items: center;
+	text-align: center;
+	height: auto;
+	padding: 1em;
+	text-decoration: none;
+}
+
+.boxcontact {
+	border: none;
+	color: black;
+	align-content: center;
+	text-decoration: none;
+}
+
+.boxcontact h1 {
+
+	background-color: gray;
+	margin-left: 1em;
+	padding-left: 1em;
+}
+
+.boxcontact ul {
+	text-align: center;
+	list-style: none;
+}
+
+.boxcontact li {
+	background-color: gray;
+	text-decoration: none;
+	border: none;
+	padding: 1em;
+}
+
+.contactlist li img {
+	width: 70vw;
+}
+
+footer {
+	height: 5em;
+	margin-top: 1em;
+	border: none;
+	background-color: gray;
+}
+
+.box2 iframe {
+	margin-left: 1em;
+	color: gray;
+	border: none;
+	height: 5em;
+}
+
+table {
+	border: none;
+	margin: 1em;
+	color: gray;
+	background-color: gray;
+}
+
+table tr {
+	border: none;
+	color: gray;
+	background-color: ivory;
+}
+
+table th {
+	border: none;
+	padding: 1em;
+	color: gray;
+}
+
+table td {
+	border: none;
+	padding: 1em;
+}
+
+.flex1 {
+	border: solid;
+	border-color: dimgray;
+	flex: 1;
+}
+
+.flex1noborder {
+	border: none;
+	flex: 1;
+}
+
+.flex2 {
+	border: solid;
+	border-color: dimgray;
+	flex: 2;
+}
